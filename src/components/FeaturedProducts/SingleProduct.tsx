@@ -6,7 +6,7 @@ const SingleProduct = ({ product }: { product: Product }) => {
   const { name, slug, price, oldPrice, image, rating, reviews, inStock, shortDescription } = product;
 
   return (
-    <div className="group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark">
+    <div className="group relative flex h-full flex-col overflow-hidden rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark">
       <Link href={`/products/${slug}`} className="relative block aspect-square w-full">
         {oldPrice && (
           <span className="absolute right-4 top-4 z-20 inline-flex items-center justify-center rounded-full bg-red-500 px-3 py-1 text-sm font-semibold text-white">
@@ -20,7 +20,7 @@ const SingleProduct = ({ product }: { product: Product }) => {
         )}
         <Image src={image} alt={name} fill className="object-cover" />
       </Link>
-      <div className="p-6 sm:p-8">
+      <div className="flex flex-1 flex-col p-6 sm:p-8">
         <h3>
           <Link
             href={`/products/${slug}`}
@@ -29,7 +29,7 @@ const SingleProduct = ({ product }: { product: Product }) => {
             {name}
           </Link>
         </h3>
-        <p className="mb-4 text-sm text-body-color dark:text-body-color-dark">
+        <p className="mb-4 flex-1 text-sm text-body-color dark:text-body-color-dark">
           {shortDescription}
         </p>
         <div className="mb-4 flex items-center gap-2">
