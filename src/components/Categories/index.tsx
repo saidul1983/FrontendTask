@@ -5,7 +5,8 @@ import categoriesData from "@/data/categories.json";
 
 const Categories = () => {
   return (
-    <section className="bg-white py-16 dark:bg-dark md:py-20 lg:py-28">
+    <section className="bg-white pb-8 pt-16 dark:bg-dark md:pb-10 md:pt-20 lg:pb-5 lg:pt-28">
+
       <div className="container">
         <SectionTitle
           title="Shop by Category"
