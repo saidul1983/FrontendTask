@@ -60,7 +60,6 @@ const Footer = () => {
                   />
                 </Link>
 
-                {/* SOCIAL ICONS */}
                 <div className="mb-9 flex items-center">
                   {footerData.socialLinks.map((social, index) => (
                     <a
@@ -90,7 +89,6 @@ const Footer = () => {
                   ))}
                 </div>
 
-                {/* Newsletter Section */}
                 <div>
                   <h3 className="mb-4 text-xl font-bold text-black dark:text-white">
                     {footerData.newsletter.title}

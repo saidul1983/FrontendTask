@@ -7,13 +7,11 @@ import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 
 const Header = () => {
-  // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
     setNavbarOpen(!navbarOpen);
   };
 
-  // Sticky Navbar
   const [sticky, setSticky] = useState(false);
   const handleStickyNavbar = () => {
     if (window.scrollY >= 80) {
@@ -26,7 +24,6 @@ const Header = () => {
     window.addEventListener("scroll", handleStickyNavbar);
   });
 
-  // submenu handler
   const [openIndex, setOpenIndex] = useState(-1);
   const handleSubmenu = (index) => {
     if (openIndex === index) {
