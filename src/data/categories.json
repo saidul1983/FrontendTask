@@ -1,0 +1,101 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Computers",
+      "slug": "computers",
+      "description": "Shop for desktop computers, notebooks, and accessories",
+      "subcategories": [
+        {
+          "id": 11,
+          "name": "Desktops",
+          "slug": "desktops"
+        },
+        {
+          "id": 12,
+          "name": "Notebooks",
+          "slug": "notebooks"
+        },
+        {
+          "id": 13,
+          "name": "Software",
+          "slug": "software"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Electronics",
+      "slug": "electronics",
+      "description": "Browse our electronics collection",
+      "subcategories": [
+        {
+          "id": 21,
+          "name": "Camera & photo",
+          "slug": "camera-photo"
+        },
+        {
+          "id": 22,
+          "name": "Cell phones",
+          "slug": "cell-phones"
+        },
+        {
+          "id": 23,
+          "name": "Others",
+          "slug": "others"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Apparel",
+      "slug": "apparel",
+      "description": "Clothing and fashion items",
+      "subcategories": [
+        {
+          "id": 31,
+          "name": "Shoes",
+          "slug": "shoes"
+        },
+        {
+          "id": 32,
+          "name": "Clothing",
+          "slug": "clothing"
+        },
+        {
+          "id": 33,
+          "name": "Accessories",
+          "slug": "accessories"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Digital downloads",
+      "slug": "digital-downloads",
+      "description": "Downloadable products",
+      "subcategories": []
+    },
+    {
+      "id": 5,
+      "name": "Books",
+      "slug": "books",
+      "description": "Books and publications",
+      "subcategories": []
+    },
+    {
+      "id": 6,
+      "name": "Jewelry",
+      "slug": "jewelry",
+      "description": "Fine jewelry and accessories",
+      "subcategories": []
+    },
+    {
+      "id": 7,
+      "name": "Gift Cards",
+      "slug": "gift-cards",
+      "description": "Gift cards for any occasion",
+      "subcategories": []
+    }
+  ]
+}
