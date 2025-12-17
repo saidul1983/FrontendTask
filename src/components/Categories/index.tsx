@@ -19,7 +19,7 @@ const Categories = () => {
             <Link
               key={category.id}
               href={`/categories/${category.slug}`}
-              className="group overflow-hidden rounded-sm bg-white shadow-one transition duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark"
+              className="group overflow-hidden rounded-sm bg-white shadow-one transition-all duration-500 hover:scale-104 hover:shadow-two hover:bg-primary/5 dark:bg-dark dark:hover:shadow-gray-dark dark:hover:bg-primary/10 hover:z-10"
             >
               <div className="relative aspect-square w-full overflow-hidden">
                 <Image
