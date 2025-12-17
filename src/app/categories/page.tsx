@@ -8,7 +8,7 @@ export default function CategoriesPage() {
     <>
       <Breadcrumb
         pageName="Categories"
-        description="Browse our product categories"
+        description=""
       />
 
       <section className="pb-16 pt-16 md:pb-20 md:pt-20 lg:pb-28 lg:pt-28">
