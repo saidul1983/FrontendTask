@@ -104,21 +104,16 @@ const Header = () => {
                   <ul className="block lg:flex lg:space-x-12">
                     {menuData.map((menuItem, index) => (
                       <li key={index} className="group relative">
-                        {menuItem.path ? (
-                          <Link
-                            href={menuItem.path}
-                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                              usePathName === menuItem.path
-                                ? "text-primary dark:text-white"
-                                : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
-                            }`}
-                          >
-                            {menuItem.title}
-                          </Link>
-                        ) : (
+                        {menuItem.submenu ? (
                           <>
-                            <p
-                              onClick={() => handleSubmenu(index)}
+                            <Link
+                              href={menuItem.path || "#"}
+                              onClick={(e) => {
+                                if (window.innerWidth < 1024) {
+                                  e.preventDefault();
+                                  handleSubmenu(index);
+                                }
+                              }}
                               className="text-dark group-hover:text-primary flex cursor-pointer items-center justify-between py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 dark:text-white/70 dark:group-hover:text-white"
                             >
                               {menuItem.title}
@@ -132,23 +127,36 @@ const Header = () => {
                                   />
                                 </svg>
                               </span>
-                            </p>
+                            </Link>
                             <div
-                              className={`submenu dark:bg-dark relative top-full left-0 rounded-sm bg-white transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
+                              className={`submenu dark:bg-dark relative top-full left-0 rounded-sm bg-white transition-all duration-300 lg:invisible lg:absolute lg:left-1/2 lg:top-full lg:block lg:w-auto lg:min-w-[200px] lg:-translate-x-1/2 lg:p-1 lg:opacity-0 lg:shadow-xl lg:group-hover:visible lg:group-hover:opacity-100 ${
                                 openIndex === index ? "block" : "hidden"
                               }`}
                             >
-                              {menuItem.submenu.map((submenuItem, index) => (
-                                <Link
-                                  href={submenuItem.path}
-                                  key={index}
-                                  className="text-dark hover:text-primary block rounded-sm py-2.5 text-sm lg:px-3 dark:text-white/70 dark:hover:text-white"
-                                >
-                                  {submenuItem.title}
-                                </Link>
-                              ))}
+                              <div className={`grid gap-1 ${menuItem.title === "Categories" ? "lg:grid-cols-2" : ""}`}>
+                                {menuItem.submenu.map((submenuItem, idx) => (
+                                  <Link
+                                    href={submenuItem.path}
+                                    key={idx}
+                                    className="text-dark hover:bg-primary/5 hover:text-primary block rounded-sm px-4 py-1.5 text-sm font-medium transition dark:text-white/80 dark:hover:bg-primary/10 dark:hover:text-white"
+                                  >
+                                    {submenuItem.title}
+                                  </Link>
+                                ))}
+                              </div>
                             </div>
                           </>
+                        ) : (
+                          <Link
+                            href={menuItem.path}
+                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                              usePathName === menuItem.path
+                                ? "text-primary dark:text-white"
+                                : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
+                            }`}
+                          >
+                            {menuItem.title}
+                          </Link>
                         )}
                       </li>
                     ))}
