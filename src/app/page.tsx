@@ -1,4 +1,3 @@
-import Blog from "@/components/Blog";
 import Categories from "@/components/Categories";
 import FeaturedProducts from "@/components/FeaturedProducts";
 import { Metadata } from "next";
@@ -13,7 +12,6 @@ export default function Home() {
     <>
       <Categories />
       <FeaturedProducts />
-      <Blog />
     </>
   );
 }
