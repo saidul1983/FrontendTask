@@ -1,4 +1,5 @@
 import Blog from "@/components/Blog";
+import Categories from "@/components/Categories";
 import FeaturedProducts from "@/components/FeaturedProducts";
 import { Metadata } from "next";
 
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <Categories />
       <FeaturedProducts />
       <Blog />
     </>

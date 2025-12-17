@@ -5,21 +5,25 @@
       "name": "Computers",
       "slug": "computers",
       "description": "Shop for desktop computers, notebooks, and accessories",
+      "image": "/images/nopCommerceImages/category_computers.jpeg",
       "subcategories": [
         {
           "id": 11,
           "name": "Desktops",
-          "slug": "desktops"
+          "slug": "desktops",
+          "image": "/images/nopCommerceImages/category_desktops.jpg"
         },
         {
           "id": 12,
           "name": "Notebooks",
-          "slug": "notebooks"
+          "slug": "notebooks",
+          "image": "/images/nopCommerceImages/category_notebooks.jpg"
         },
         {
           "id": 13,
           "name": "Software",
-          "slug": "software"
+          "slug": "software",
+          "image": "/images/nopCommerceImages/category_software.jpg"
         }
       ]
     },
@@ -28,21 +32,25 @@
       "name": "Electronics",
       "slug": "electronics",
       "description": "Browse our electronics collection",
+      "image": "/images/nopCommerceImages/category_electronics.jpeg",
       "subcategories": [
         {
           "id": 21,
           "name": "Camera & photo",
-          "slug": "camera-photo"
+          "slug": "camera-photo",
+          "image": "/images/nopCommerceImages/category_camera_photo.jpeg"
         },
         {
           "id": 22,
           "name": "Cell phones",
-          "slug": "cell-phones"
+          "slug": "cell-phones",
+          "image": "/images/nopCommerceImages/category_cell_phones.jpeg"
         },
         {
           "id": 23,
           "name": "Others",
-          "slug": "others"
+          "slug": "others",
+          "image": "/images/nopCommerceImages/category_electronics.jpeg"
         }
       ]
     },
@@ -51,21 +59,25 @@
       "name": "Apparel",
       "slug": "apparel",
       "description": "Clothing and fashion items",
+      "image": "/images/nopCommerceImages/category_apparel.jpeg",
       "subcategories": [
         {
           "id": 31,
           "name": "Shoes",
-          "slug": "shoes"
+          "slug": "shoes",
+          "image": "/images/nopCommerceImages/category_shoes.jpeg"
         },
         {
           "id": 32,
           "name": "Clothing",
-          "slug": "clothing"
+          "slug": "clothing",
+          "image": "/images/nopCommerceImages/category_clothing.jpeg"
         },
         {
           "id": 33,
           "name": "Accessories",
-          "slug": "accessories"
+          "slug": "accessories",
+          "image": "/images/nopCommerceImages/category_accessories.jpg"
         }
       ]
     },
@@ -74,6 +86,7 @@
       "name": "Digital downloads",
       "slug": "digital-downloads",
       "description": "Downloadable products",
+      "image": "/images/nopCommerceImages/category_digital_downloads.jpeg",
       "subcategories": []
     },
     {
@@ -81,6 +94,7 @@
       "name": "Books",
       "slug": "books",
       "description": "Books and publications",
+      "image": "/images/nopCommerceImages/category_book.jpeg",
       "subcategories": []
     },
     {
@@ -88,6 +102,7 @@
       "name": "Jewelry",
       "slug": "jewelry",
       "description": "Fine jewelry and accessories",
+      "image": "/images/nopCommerceImages/category_jewelry.jpeg",
       "subcategories": []
     },
     {
@@ -95,6 +110,7 @@
       "name": "Gift Cards",
       "slug": "gift-cards",
       "description": "Gift cards for any occasion",
+      "image": "/images/nopCommerceImages/category_gift_cards.jpeg",
       "subcategories": []
     }
   ]

@@ -2,94 +2,88 @@ import { Menu } from "@/types/menu";
 
 const menuData: Menu[] = [
   {
+    id: 1,
+    title: "Categories",
+    path: "/categories",
+    newTab: false,
+  },
+  {
     id: 2,
     title: "Computers",
-    path: "/about",
+    path: "/categories/computers",
     newTab: false,
     submenu: [      
       {
-        id: 44,
-        title: "Blog Sidebar Page",
-        path: "/blog-sidebar",
+        id: 21,
+        title: "Desktops",
+        path: "/categories/desktops",
         newTab: false,
       },
       {
-        id: 45,
-        title: "Blog Details Page",
-        path: "/blog-details",
+        id: 22,
+        title: "Notebooks",
+        path: "/categories/notebooks",
         newTab: false,
       },
       {
-        id: 48,
-        title: "Error Page",
-        path: "/error",
+        id: 23,
+        title: "Software",
+        path: "/categories/software",
         newTab: false,
       }
     ]
   },
   {
-    id: 33,
-    title: "Categories",
-    path: "/blog",
+    id: 3,
+    title: "Electronics",
+    path: "/categories/electronics",
     newTab: false,
     submenu: [
       {
-        id: 101,
-        title: "About Page",
-        path: "/about",
+        id: 31,
+        title: "Camera & photo",
+        path: "/categories/camera-photo",
         newTab: false,
       },
       {
-        id: 102,
-        title: "Contact Page",
-        path: "/contact",
+        id: 32,
+        title: "Cell phones",
+        path: "/categories/cell-phones",
         newTab: false,
       },
     ]
   },
   {
     id: 4,
-    title: "Pages",
+    title: "Apparel",
+    path: "/categories/apparel",
     newTab: false,
     submenu: [      
       {
-        id: 44,
-        title: "Blog Sidebar Page",
-        path: "/blog-sidebar",
+        id: 41,
+        title: "Shoes",
+        path: "/categories/shoes",
         newTab: false,
       },
       {
-        id: 45,
-        title: "Blog Details Page",
-        path: "/blog-details",
+        id: 42,
+        title: "Clothing",
+        path: "/categories/clothing",
         newTab: false,
       },
       {
-        id: 48,
-        title: "Error Page",
-        path: "/error",
+        id: 43,
+        title: "Accessories",
+        path: "/categories/accessories",
         newTab: false,
       },
     ],
   },
   {
-    id: 114,
-    title: "Electronics",
+    id: 5,
+    title: "Books",
+    path: "/categories/books",
     newTab: false,
-    submenu: [      
-      {
-        id: 44,
-        title: "First",
-        path: "/blog-sidebar",
-        newTab: false,
-      },
-      {
-        id: 45,
-        title: "Second",
-        path: "/blog-details",
-        newTab: false,
-      }
-    ]
   },
 ];
 export default menuData;
