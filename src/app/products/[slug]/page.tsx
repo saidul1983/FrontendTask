@@ -92,7 +92,7 @@ export default async function ProductDetailsPage({
                   </p>
                 </div>
 
-                <div className="mb-6 rounded-sm bg-gray-light p-6 dark:bg-dark-2">
+                <div className="mb-6 rounded-sm bg-gray p-6 dark:bg-dark-2">
                   <div className="mb-4 flex items-baseline gap-3">
                     <span className="text-3xl font-bold text-black dark:text-white">
                       ${product.price.toFixed(2)}
